@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="framework.css">
+   <link rel="stylesheet" href="style000.css">
+
+   <title>dashbord</title>
+</head>
+
+<body>
+   <!--=============== HEADER ===============-->
+   <header>
+      <nav class="p-20">
+         <div class="container">
+            <div class="d-grid grid-3 align-items-center">
+               <div class="user">
+                  <div class="d-flex justify-content-around align-items-center">
+                     <div class="navt">
+                        <a class="gigi" href=""><img src="bell.png" alt=""><span
+                              class="d-flex justify-content-center align-items-center">02</span></a>
+                     </div>
+                     <div class="user-area ml-30">
+                        <a href="javascript:void(0)" class="d-flex align-items-center linkdrop" data-menu="optionuser">
+                           <span class="ml-5 name d-flex align-items-center">mohamed ,مرحبا<i
+                                 class="arrwdown ml-5"></i></span>
+                           <figure><img src="user.png" alt=""></figure>
+                        </a>
+                        <ul id="optionuser" class="list-unstyled dropdown p-0">
+                           <li><a href="">ملفي الشخصي</a></li>
+                           <li><a href="">الاعدادات</a></li>
+                           <li><a href="">تسجيل الخروج</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="search">
+                  <form action="">
+                     <input type="text" name=" " id=" " placeholder="search for anything">
+                     <span><i class="fas fa-search"></i></span>
+                  </form>
+               </div>
+               <div class="logo d-flex justify-content-end align-items-center">
+                  <div class="logoo">
+                  <img src="logo.png" alt="">
+                  </div>
+                  <a href="#">
+                     <div class="bar mr-15" id="header-toggle">
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <!--=============== SIDEBAR ===============-->
+   <div class="content-dashbord">
+      <div class="sidebar">
+         <div class="container">
+            <div class="user-information text-center">
+               <figure class="user-img m-auto"><img src="user.png" alt=""><span>02</span></figure>
+               <h5 class="mt-15">عبداللة محمد</h5>
+               <p><small>الصف الثاني الثانوي</small></p>
+               <ul class="data-user list-unstyled p-0 d-flex justify-content-center align-items-center mt-15">
+                  <li>
+                     <figure><img src="user.png" alt=""></figure>
+                  </li>
+                  <li>
+                     <figure><img src="user.png" alt=""></figure>
+                  </li>
+                  <li>
+                     <figure><img src="user.png" alt=""></figure>
+                  </li>
+               </ul>
+            </div>
+            <div class="menus">
+               <ul class="list-unstyled p-0">
+                  <li class="position-relative">
+                     <a class="d-flex align-items-center" href="home.html"><span class="mr-15"></span>الصفحة الرئيسية<img
+                           src="home.png" alt=""></a>
+                  </li>
+                  <li>
+                     <a class="d-flex align-items-center linkdrop" data-menu="books"><span
+                           class="mr-15"></span>الكتب<img src="book.png" alt=""></a>
+                     <ul id="books" class="list-unstyled p-0 dropdown tp-30">
+                        <li><a href="">المرحلة الابتدائية</a></li>
+                        <li><a href="">المرحلة الاعدادية</a></li>
+                        <li><a href="">المرحلة الثانوية</a></li>
+                     </ul>
+                  </li>
+                  <li class="position-relative">
+                     <a class="d-flex align-items-center linkdrop" data-menu="exams"><span
+                           class="mr-15"></span>اختبارات<img src="exams.png" alt=""></a>
+                     <ul id="exams" class="list-unstyled p-0 dropdown tp-0">
+                        <li><a href="">المرحلة الابتدائية</a></li>
+                        <li><a href="">المرحلة الاعدادية</a></li>
+                        <li><a href="">المرحلة الثانوية</a></li>
+                     </ul>
+                  </li>
+                  <li class="position-relative">
+                     <a class="d-flex align-items-center" href="#"><span class="mr-15"></span>دوري الأبطال<img
+                           src="award.png" alt=""></a>
+                  </li>
+                  <li><a class="d-flex align-items-center" href="setting.html"><span class="mr-15"></span>الاعدادات<img
+                           src="setting.png" alt=""></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="content-body">
+         <div class="box form-box">
+            <header>تعديل الملف</header>
+            <form action="" method="post">
+               <div class="field input">
+                  <label for="username">اسم المستخدم</label>
+                  <input type="text" name="username" id="username" value="<?php echo $res_Uname; ?>" autocomplete="off"
+                     required>
+               </div>
+
+               <div class="field input">
+                  <label for="email">الايميل</label>
+                  <input type="text" name="email" id="email" value="<?php echo $res_Email; ?>" autocomplete="off"
+                     required>
+               </div>
+
+               <div class="field input">
+                  <label for="age">الصف الدراسي</label>
+                  <input type="text" name="age" id="age" value="<?php echo $res_Age; ?>" autocomplete="off" required>
+               </div>
+
+               <div class="field">
+
+                  <input type="submit" class="btn" name="submit" value="تحديث" required>
+               </div>
+
+            </form>
+         </div>
+      </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+
+</html>

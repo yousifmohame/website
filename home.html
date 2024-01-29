@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="frameworks/framework.css">
+   <link rel="stylesheet" href="styles/style.css">
+
+   <title>dashbord</title>
+</head>
+
+<body>
+   <!--=============== HEADER ===============-->
+   <header>
+      <nav class="p-20">
+         <div class="container">
+            <div class="d-grid grid-3 align-items-center">
+               <div class="user">
+                  <div class="d-flex justify-content-around align-items-center">
+                     <div class="navt">
+                        <a class="gigi" href=""><img src="image/bell.png" alt=""><span
+                              class="d-flex justify-content-center align-items-center">02</span></a>
+                     </div>
+                     <div class="user-area ml-30">
+                        <a href="javascript:void(0)" class="d-flex align-items-center linkdrop" data-menu="optionuser">
+                           <span class="ml-5 name d-flex align-items-center">mohamed ,مرحبا<i
+                                 class="arrwdown ml-5"></i></span>
+                           <figure><img src="image/user.png" alt=""></figure>
+                        </a>
+                        <ul id="optionuser" class="list-unstyled dropdown p-0">
+                           <li><a href="">ملفي الشخصي</a></li>
+                           <li><a href="">الاعدادات</a></li>
+                           <li><a href="">تسجيل الخروج</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="search">
+                  <form action="">
+                     <input type="text" name=" " id=" " placeholder="search for anything">
+                     <span><i class="fas fa-search"></i></span>
+                  </form>
+               </div>
+               <div class="logo d-flex justify-content-end align-items-center">
+                  <div class="logoo">
+                  <img src="image/logo.png" alt="">
+                  </div>
+                  <a href="#">
+                     <div class="bar mr-15" id="header-toggle">
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <!--=============== SIDEBAR ===============-->
+   <div class="content-dashbord">
+      <div class="sidebar">
+         <div class="container">
+            <div class="user-information text-center">
+               <figure class="user-img m-auto"><img src="image/user.png" alt=""><span>02</span></figure>
+               <h5 class="mt-15">عبداللة محمد</h5>
+               <p><small>الصف الثاني الثانوي</small></p>
+               <ul class="data-user list-unstyled p-0 d-flex justify-content-center align-items-center mt-15">
+                  <li>
+                     <figure><img src="image/user.png" alt=""></figure>
+                  </li>
+                  <li>
+                     <figure><img src="image/user.png" alt=""></figure>
+                  </li>
+                  <li>
+                     <figure><img src="image/user.png" alt=""></figure>
+                  </li>
+               </ul>
+            </div>
+            <div class="menus">
+               <ul class="list-unstyled p-0">
+                  <li class="position-relative">
+                     <a href="home.html" class="d-flex align-items-center"><span class="mr-15"></span>الصفحة الرئيسية<img
+                           src="image/home.png" alt=""></a>
+                  </li>
+                  <li>
+                     <a class="d-flex align-items-center linkdrop" data-menu="books"><span
+                           class="mr-15"></span>الكتب<img src="image/book.png" alt=""></a>
+                     <ul id="books" class="list-unstyled p-0 dropdown tp-30">
+                        <li><a href="">المرحلة الابتدائية</a></li>
+                        <li><a href="">المرحلة الاعدادية</a></li>
+                        <li><a href="">المرحلة الثانوية</a></li>
+                     </ul>
+                  </li>
+                  <li class="position-relative">
+                     <a class="d-flex align-items-center linkdrop" data-menu="exams"><span
+                           class="mr-15"></span>اختبارات<img src="image/exams.png" alt=""></a>
+                     <ul id="exams" class="list-unstyled p-0 dropdown tp-0">
+                        <li><a href="">المرحلة الابتدائية</a></li>
+                        <li><a href="">المرحلة الاعدادية</a></li>
+                        <li><a href="">المرحلة الثانوية</a></li>
+                     </ul>
+                  </li>
+                  <li class="position-relative">
+                     <a class="d-flex align-items-center" href="#"><span class="mr-15"></span>دوري الأبطال<img
+                           src="image/award.png" alt=""></a>
+                  </li>
+                  <li><a class="d-flex align-items-center" href="setting.html"><span class="mr-15"></span>الاعدادات<img
+                           src="image/setting.png" alt=""></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="content-body">
+         <div class="top-bar d-grid align-items-center">
+            <select name="" id="">
+               <option value="">categories</option>
+               <option value="">categories</option>
+               <option value="">categories</option>
+            </select>
+            <ul class="link-tab d-flex justify-content-around list-unstyled p-0">
+               <li><a class="linktab" href="" data-areatab="tab01">المرحلة الثانوية</a></li>
+               <li><a class="linktab" href="" data-areatab="tab02">المرحلة الاعدادية</a></li>
+               <li><a class="linktab activelink" href="" data-areatab="tab03">المرحلة الابتدائية</a></li>
+            </ul>
+            <ul class="list-grid d-flex justify-content-around list-unstyled p-0">
+               <li><a class="grid" href=""><span></span></a></li>
+               <li><a class="list" href=""><span></span></a></li>
+            </ul>
+         </div>
+         
+         <div class="tabs">
+            <div class="tab-content fade" id="tab01">
+               <div class="content-box mt-50">
+                  <div class="head d-flex align-items-center justify-content-center mb-10">
+                     
+                     <div>
+                        <h1>المرحلة الثانوية</h1>
+                     </div>
+                     
+                  </div>
+      
+      
+                  <div class="cards d-grid">
+                     <div class="card-item bg-01">
+                        <ul class="list-unstyled p-0 d-flex align-items-center">
+                           <li>
+                              <span class="user"><i class="icon-user"></i>عبدالله<i class="star"></i></span>
+                           </li>
+                        </ul>
+                        <div class="thumb">
+                           
+                           <div class="text">
+                              <h2>الصف الثالث الثانوي</h2>
+                              
+                           </div>
+                        </div>
+                        <div class="term">
+                           <a class="buttonterm" href="secondary/12.html">ابدأ الأن</a>
+                     </div>
+                     
+                     </div>
+                     <div class="card-item bg-02">
+                        <ul class="list-unstyled p-0 d-flex align-items-center">
+                           <li>
+                              <span class="user"><i class="icon-user"></i>عبدالله<i class="star"></i></span>
+                           </li>
+                        </ul>
+                        <div class="thumb">
+                           
+                           <div class="text">
+                              <h2>الصف الثاني الثانوي</h2>
+                              
+                           </div>
+                        </div>
+                        <div class="term">
+                           <a class="buttonterm" href="secondary/11.html">ابدأ الأن</a>
+                           
+                        </div>
+                        
+                     </div>
+                     <div class="card-item bg-03">
+                        <ul class="list-unstyled p-0 d-flex align-items-center">
+                           <li>
+                              <span class="user"><i class="icon-user"></i>عبدالله<i class="star"></i></span>
+                           </li>
+                        </ul>
+                        <div class="thumb">
+                           
+                           <div class="text">
+                              <h2>الصف الأول الثانوي</h2>
+                              
+                           </div>
+                        </div>
+                        <div class="term">
+                           <a class="buttonterm" href="secondary/10.html">ابدأ الأن</a>
+                           
+                        </div>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="tab-content fade" id="tab02">
+               <div class="content-box mt-50">
+                  <div class="head d-flex align-items-center justify-content-center mb-10">
+                     
+                     <div>
+                        <h1>المرحلة الاعدادية</h1>
+
+                     </div>
+                  </div>
+      
+      
+                  <div class="cards d-grid">
+                     <div class="card-item bg-01">
+                        <ul class="list-unstyled p-0 d-flex align-items-center">
+                           <li>
+                              <span class="user"><i class="icon-user"></i>عبدالله<i class="star"></i></span>
+                           </li>
+                        </ul>
+                        <div class="thumb">
+                           
+                           <div class="text">
+                              <h2>الصف الثالث الاعدادي</h2>
+                              
+                           </div>
+                        </div>
+                        <div class="term">
+                           <a class="buttonterm" href="preparatory/9.html">ابدأ الأن</a>
+                        </div>
+                        
+                     </div>
+                     <div class="card-item bg-02">
+                        <ul class="list-unstyled p-0 d-flex align-items-center">
+                           <li>
+                              <span class="user"><i class="icon-user"></i>عبدالله<i class="star"></i></span>
+                           </li>
+                        </ul>
+                        <div class="thumb">
+                           
+                           <div class="text">
+                              <h2>الصف الثاني الاعدادي</h2>
+                              
+                           </div>
+                        </div>
+                        <div class="term">
+                           <a class="buttonterm" href="preparatory/8.html">ابدأ الأن</a>
+                        </div>
+                       
+                     </div>
+                     <div class="card-item bg-03">
+                        <ul class="list-unstyled p-0 d-flex align-items-center">
+                           <li>
+                              <span class="user"><i class="icon-user"></i>عبدالله<i class="star"></i></span>
+                           </li>
+                        </ul>
+                        <div class="thumb">
+                           
+                           <div class="text">
+                              <h2>الصف الأول الاعدادي</h2>
+                              
+                           </div>
+                        </div>
+                        <div class="term">
+                           <a class="buttonterm" href="preparatory/7.html">ابدأ الأن</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               </div>
+      
+            </div>
+            <div class="tab-content fade active" id="tab03">
+               <div class="content-box mt-50">
+                  <div class="head d-flex align-items-center justify-content-center mb-10">
+                     
+                     <div>
+                        <h1>المرحلة الابتدائية</h1>
+                     </div>
+                     
+                  </div>
+      
+      
+                  <div class="cards d-grid">
+                     <div class="card-item bg-01">
+                        <ul class="list-unstyled p-0 d-flex align-items-center">
+                           <li>
+                              <span class="user"><i class="icon-user"></i>عبدالله<i class="star"></i></span>
+                           </li>
+                        </ul>
+                        <div class="thumb">
+                           
+                           <div class="text">
+                              <h2>الصف السادس الابتدائي</h2>
+                           </div>
+                        </div>
+                        <div class="term">
+                           <a class="buttonterm" href="primary/6.html">ابدأ الأن</a>
+                        </div>
+                        
+                     </div>
+                     <div class="card-item bg-02">
+                        <ul class="list-unstyled p-0 d-flex align-items-center">
+                           <li>
+                              <span class="user"><i class="icon-user"></i>عبدالله<i class="star"></i></span>
+                           </li>
+                        </ul>
+                        <div class="thumb">
+                           
+                           <div class="text">
+                              <h2>الصف الخامس الابتدائي</h2>
+                             
+                           </div>
+                        </div>
+                        <div class="term">
+                           <a class="buttonterm" href="primary/5.html">ابدأ الأن</a>
+                        </div>
+                        
+                     </div>
+                     <div class="card-item bg-03">
+                        <ul class="list-unstyled p-0 d-flex align-items-center">
+                           <li>
+                              <span class="user"><i class="icon-user"></i>عبدالله<i class="star"></i></span>
+                           </li>
+                        </ul>
+                        <div class="thumb">
+                           
+                           <div class="text">
+                              <h2>الصف الرابع الابتدائي</h2>
+         
+                           </div>
+                        </div>
+                        <div class="term">
+                           <a class="buttonterm" href="primary/4.html">ابدأ الأن</a>
+                        </div>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--=============== script JS ===============-->
+   <script src="javascript/script.js"></script>
+</body>
+
+</html>
