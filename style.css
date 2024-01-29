@@ -871,3 +871,65 @@ a.buttonterm {
 }
 
 }
+@media (max-width:770px) {
+  .sidebar {
+    background-color: #eeeff0;
+    padding: 0px;
+    transition: .5s;
+    position: absolute;
+    right: 0;
+    width: 20%;
+  }
+
+  .search form {
+    width: 92px;
+    position: relative;
+  }
+
+  nav .user-area .name {
+    /* font-size: 15px; */
+    display: none;
+  }
+
+  .container {
+    padding: 0 0px
+  }
+
+  .sidebar .menus>ul>li>a {
+    font-size: 0px;
+  }
+
+  .sidebar .user-information .data-user {
+    display: none;
+  }
+
+  .content-body {
+    padding: 55px 0px;
+  }
+
+  .top-bar {
+    grid-template-columns: 75% 25% 0%;
+    background-color: #fffefe9f;
+  }
+
+  .top-bar .link-tab .linktab {
+    padding: 17px 0;
+  }
+
+  .top-bar select {
+    display: none;
+  }
+
+  .top-bar {
+    padding: 15px 0px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+  }
+
+  .sidebar .menus>ul>li>a {
+    padding: 10px 0px;
+  }
+}
